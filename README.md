@@ -170,6 +170,47 @@ Response:
 }
 ```
 
+### DATA.POLICE.UK Police API Documentation
+The API provides a rich data source for information, including:
+https://data.police.uk/docs/
+
+- Neighbourhood team members
+- Upcoming events
+- Street-level crime and outcome data
+- Nearest police stations
+- The API is implemented as a standard JSON web service using HTTP GET and POST requests. Full request and response examples are provided in the documentation.
+
+*Example*
+```
+https://data.police.uk/api/crimes-at-location?date=2017-02&location_id=884227
+```
+Response:
+```javascript
+[
+    {
+        "category": "violent-crime",
+        "location_type": "Force",
+        "location": {
+            "latitude": "52.643950",
+            "street": {
+                "id": 884227,
+                "name": "On or near Abbey Gate"
+            },
+            "longitude": "-1.143042"
+        },
+        "context": "",
+        "outcome_status": {
+            "category": "Unable to prosecute suspect",
+            "date": "2017-02"
+        },
+        "persistent_id": "4d83433f3117b3a4d2c80510c69ea188a145bd7e94f3e98924109e70333ff735",
+        "id": 54726925,
+        "location_subtype": "",
+        "month": "2017-02"
+    }
+]
+```
+
 ### Google Books API
 The Books API is a way to search and access that content, as well as to create and view personalization around that content.
 https://developers.google.com/books/docs/overview

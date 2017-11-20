@@ -1,12 +1,12 @@
 # Open-Api-Resources
 Open and Free API resources for Research and Testing
 
-### Star Wars API 
+### SWAPI The Star Wars API 
 https://swapi.co/
 
 *Example*
 ```javascript
-https://swapi.co/api/
+https://swapi.co/api/planets/1/
 ```
 Response:
 ```javascript

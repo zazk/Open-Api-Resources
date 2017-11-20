@@ -169,3 +169,94 @@ Response:
 	]
 }
 ```
+
+### Google Books API
+The Books API is a way to search and access that content, as well as to create and view personalization around that content.
+https://developers.google.com/books/docs/overview
+
+*Example*
+```
+https://www.googleapis.com/books/v1/volumes?q=flowers
+```
+Response:
+```javascript
+{
+  "kind":"books#volumes",
+  "totalItems":850,
+  "items":[
+    {
+      "kind":"books#volume",
+      "id":"gsK9jwEACAAJ",
+      "etag":"BpEVTFG5f8Q",
+      "selfLink":"https://www.googleapis.com/books/v1/volumes/gsK9jwEACAAJ",
+      "volumeInfo":{
+        "title":"El Lenguaje de Las Flores",
+        "authors":[
+          "Vanessa Diffenbaugh"
+        ],
+        "publisher":"Salamandra",
+        "publishedDate":"2016",
+        "description":"Inspirándose en el sofisticado código que la sociedad victoriana utilizaba para expresar sentimientos por medio de las flores, Vanessa Diffenbaugh narra el viaje emocional de una joven californiana que, marcada por una dolorosa historia personal..",
+        "industryIdentifiers":[
+          {
+            "type":"ISBN_10",
+            "identifier":"8498387477"
+          },
+          {
+            "type":"ISBN_13",
+            "identifier":"9788498387476"
+          }
+        ],
+        "readingModes":{
+          "text":false,
+          "image":false
+        },
+        "pageCount":352,
+        "printType":"BOOK",
+        "categories":[
+          "Fiction"
+        ],
+        "maturityRating":"NOT_MATURE",
+        "allowAnonLogging":false,
+        "contentVersion":"preview-1.0.0",
+        "panelizationSummary":{
+          "containsEpubBubbles":false,
+          "containsImageBubbles":false
+        },
+        "imageLinks":{
+          "smallThumbnail":"http://books.google.com/books/content?id=gsK9jwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail":"http://books.google.com/books/content?id=gsK9jwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language":"es",
+        "previewLink":"http://books.google.com.pe/books?id=gsK9jwEACAAJ&dq=flowers&hl=&cd=1&source=gbs_api",
+        "infoLink":"http://books.google.com.pe/books?id=gsK9jwEACAAJ&dq=flowers&hl=&source=gbs_api",
+        "canonicalVolumeLink":"https://books.google.com/books/about/El_Lenguaje_de_Las_Flores.html?hl=&id=gsK9jwEACAAJ"
+      },
+      "saleInfo":{
+        "country":"PE",
+        "saleability":"NOT_FOR_SALE",
+        "isEbook":false
+      },
+      "accessInfo":{
+        "country":"PE",
+        "viewability":"NO_PAGES",
+        "embeddable":false,
+        "publicDomain":false,
+        "textToSpeechPermission":"ALLOWED",
+        "epub":{
+          "isAvailable":false
+        },
+        "pdf":{
+          "isAvailable":false
+        },
+        "webReaderLink":"http://play.google.com/books/reader?id=gsK9jwEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus":"NONE",
+        "quoteSharingAllowed":false
+      },
+      "searchInfo":{
+        "textSnippet":"Inspirándose en el sofisticado código que la sociedad victoriana utilizaba para expresar sentimientos por medio de las flores, Vanessa Diffenbaugh narra el viaje emocional de una joven californiana que, marcada por una dolorosa historia ..."
+      }
+    }
+  ]
+}
+```

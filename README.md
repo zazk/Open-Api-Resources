@@ -1,6 +1,11 @@
 # Open-Api-Resources
 Open and Free API resources for Research and Testing
 
+- [SWAPI The Star Wars API](#swapi-the-star-wars-api) 
+- [ICNDB The internet Chuck Norris Database](#icndb-the-internet-chuck-norris-database) 
+- [Pokemon API](#pokemon-api) 
+- [DATA.POLICE.UK Police API Documentation](#datapoliceuk-police-api-documentation) 
+- [Google Books API](#google-books-api) 
 
 Adding an API Resource
 -------------------
@@ -60,6 +65,7 @@ Response:
 }
 ```
 
+-------------------
 ### ICNDB The internet Chuck Norris Database
 http://www.icndb.com/api/
 
@@ -90,6 +96,7 @@ Response:
 }
 ```
 
+-------------------
 ### Pokemon API
 Finally; all the Pokémon data you'll ever need, in one place, and easily accessible through a modern RESTful API.
 https://www.pokeapi.co/
@@ -170,6 +177,7 @@ Response:
 }
 ```
 
+-------------------
 ### DATA.POLICE.UK Police API Documentation
 The API provides a rich data source for information, including:
 https://data.police.uk/docs/
@@ -211,6 +219,7 @@ Response:
 ]
 ```
 
+-------------------
 ### Google Books API
 The Books API is a way to search and access that content, as well as to create and view personalization around that content.
 https://developers.google.com/books/docs/overview

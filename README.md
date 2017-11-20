@@ -45,3 +45,32 @@ Response:
 }
 ```
 
+### ICNDB The internet Chuck Norris Database
+http://www.icndb.com/api/
+
+*Example*
+```javascript
+http://api.icndb.com/jokes/random/2?limitTo=[nerdy]
+```
+Response:
+```javascript
+{
+    "type": "success",
+    "value": [
+        {
+            "id": 556,
+            "joke": "Chuck Norris can write to an output stream.",
+            "categories": [
+                "nerdy"
+            ]
+        },
+        {
+            "id": 526,
+            "joke": "No one has ever pair-programmed with Chuck Norris and lived to tell about it.",
+            "categories": [
+                "nerdy"
+            ]
+        }
+    ]
+}
+```
